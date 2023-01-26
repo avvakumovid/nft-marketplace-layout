@@ -573,3 +573,143 @@ body {
   color: #F5F7FA;
   font-weight: 600;
 }
+
+/* Hot Collection */
+
+.hot-collection {
+  padding: 120px 0;
+  background-color: var(--black);
+}
+
+.hot-collection__header {
+  display: flex;
+  flex-direction: row;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hot-collection__header-heading {
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  align-items: center;
+}
+
+.hot-collection__header-accent {
+  color: var(--pink);
+
+}
+
+.hot-collection__header-view {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FE3796;
+}
+
+.hot-collection__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 67.5px;
+  margin-top: 80px;
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 60px;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+  max-height: 500px;
+}
+
+.hot-collection__list li {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 25px 25px 25px 0;
+}
+
+.hot-collection__list li:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  left: -60px;
+  width: 50px;
+  color: var(--white);
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hot-collection__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  width: 350px;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 25px;
+}
+
+.hot-collection__item-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.hot-collection__item-top,
+.hot-collection__item-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.hot-collection__item-top span:first-child {
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  overflow: hidden;
+}
+
+.hot-collection__item-top span:last-child {
+  font-weight: 500;
+  font-size: 12px;
+  color: #42A846;
+  text-align: right;
+}
+
+.hot-collection__item-bottom span:first-child {
+  font-weight: 500;
+  font-size: 14px;
+  color: #65676B;
+}
+
+.hot-collection__item-bottom span:first-child em {
+  font-weight: 700;
+  font-size: 12px;
+  font-style: normal;
+  color: #fff;
+}
+
+.hot-collection__item-bottom span:last-child {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.hot-collection__item-bottom span:last-child em {
+  font-size: 12px;
+  font-style: normal;
+
+}
